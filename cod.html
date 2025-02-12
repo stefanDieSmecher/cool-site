@@ -3,8 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Interactive Website</title>
+    <title>View My Code</title>
     <style>
+        body {
+            font-family: monospace;
+            white-space: pre-wrap;
+            background-color: #1e1e1e;
+            color: #dcdcdc;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My Interactive Website&lt;/title&gt;
+    &lt;style&gt;
         body {
             font-family: Arial, sans-serif;
             text-align: center;
@@ -16,34 +34,37 @@
         input[type="checkbox"]:checked ~ .hidden-content {
             display: block;
         }
-    </style>
-</head>
-<body>
-    <h1>Welcome to My Interactive HTML Page</h1>
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My Interactive HTML Page&lt;/h1&gt;
     
-    <!-- Collapsible Section -->
-    <details>
-        <summary>Click to Expand</summary>
-        <p>This is a hidden section that appears when you click.</p>
-    </details>
+    &lt;!-- Collapsible Section --&gt;
+    &lt;details&gt;
+        &lt;summary&gt;Click to Expand&lt;/summary&gt;
+        &lt;p&gt;This is a hidden section that appears when you click.&lt;/p&gt;
+    &lt;/details&gt;
 
-    <!-- Checkbox Toggle -->
-    <h2>Toggle Content</h2>
-    <label>
-        <input type="checkbox"> Show Hidden Content
-    </label>
-    <div class="hidden-content">
-        <p>You revealed this text using only HTML!</p>
-    </div>
+    &lt;!-- Checkbox Toggle --&gt;
+    &lt;h2&gt;Toggle Content&lt;/h2&gt;
+    &lt;label&gt;
+        &lt;input type="checkbox"&gt; Show Hidden Content
+    &lt;/label&gt;
+    &lt;div class="hidden-content"&gt;
+        &lt;p&gt;You revealed this text using only HTML!&lt;/p&gt;
+    &lt;/div&gt;
 
-    <!-- Internal Navigation -->
-    <h2>Jump to Section</h2>
-    <a href="#section2">Go to Section 2</a>
-    <br><br>
-    <div style="margin-top: 100vh;"></div> <!-- Spacer to make scrolling visible -->
+    &lt;!-- Internal Navigation --&gt;
+    &lt;h2&gt;Jump to Section&lt;/h2&gt;
+    &lt;a href="#section2"&gt;Go to Section 2&lt;/a&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;div style="margin-top: 100vh;"&gt;&lt;/div&gt; &lt;!-- Spacer to make scrolling visible --&gt;
     
-    <h2 id="section2">Section 2</h2>
-    <p>You jumped to this section using an anchor link.</p>
-    <a href="#top">Back to Top</a>
+    &lt;h2 id="section2"&gt;Section 2&lt;/h2&gt;
+    &lt;p&gt;You jumped to this section using an anchor link.&lt;/p&gt;
+    &lt;a href="#top"&gt;Back to Top&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
 </body>
 </html>
